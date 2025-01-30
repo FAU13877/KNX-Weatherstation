@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "PlatformIO Build",
+            "type": "shell",
+            "command": "platformio run",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "PlatformIO Upload",
+            "type": "shell",
+            "command": "platformio run -t upload",
+            "group": "build"
+        },
+        {
+            "label": "PlatformIO Monitor",
+            "type": "shell",
+            "command": "platformio device monitor",
+            "group": "build"
+        }
+    ]
+}
+
